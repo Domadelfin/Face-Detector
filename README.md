@@ -2,7 +2,7 @@
 
 A webcam app that finds your face and tells you whether you're smiling, built step by step in Python with OpenCV. It's the first stage of a bigger goal: recognizing facial expressions and what they might mean.
 
-![Smile detector demo](Gifs/smoothed_smile.gif)
+![Smile detector demo](Smiley/Gifs/smoothed_smile.gif)
 
 ## How it works
 
