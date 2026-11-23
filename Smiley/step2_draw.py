@@ -31,7 +31,7 @@ while True:
     cv2.imshow("Gray", grey)
 
     key = cv2.waitKey(1)
-    if key == ord('1'):
+    if key == ord('q'):
         break
 
     if key == ord('p'):
