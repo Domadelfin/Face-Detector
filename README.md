@@ -2,8 +2,7 @@
 
 A webcam app that finds your face and tells you whether you're smiling, built step by step in Python with OpenCV. It's the first stage of a bigger goal: recognizing facial expressions and what they might mean.
 
-<!-- Demo GIF: add a short recording of step6_smooth.py here, e.g.
-![Smile detector demo](images/smile_demo.gif) -->
+![Smile detector demo](Gifs/smoothed_smile.gif)
 
 ## How it works
 
@@ -47,8 +46,13 @@ I ran experiments at each step to understand how the detectors behave and where 
 - **Grace period (`MAX_MISSED`):** at `0`, the box disappears whenever the detector misses a single frame. With a long grace period, the box stays on screen after I've left.
 - **Voting (`HISTORY`):** a long history makes the label stable, but it takes a while to switch both when I start smiling and when I stop.
 
-![Raw vs. smoothed detection](Smiley/Gifs/Raw Smile Indicator.gif)
-![Raw vs. smoothed detection](Smiley/Gifs/Smoother Indicator.gif)
+In the raw version, the box jitters and the label reacts to every single frame:
+
+![Raw smile detection](Smiley/Gifs/raw_smile.gif)
+
+With smoothing, the box moves steadily and the label only changes once most recent frames agree:
+
+![Smoothed smile detection](Smiley/Gifs/smoothed_smile.gif)
 
 ## Limitations
 
